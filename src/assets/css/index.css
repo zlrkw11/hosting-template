@@ -53,3 +53,11 @@ input[type="text"] {
 ol {
   padding: 0px;
 }
+
+li {
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: hsl(0, 0%, 97%);
+  margin-bottom: 10px;
+  border: 3px solid black;
+}
