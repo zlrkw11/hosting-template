@@ -1,3 +1,3 @@
 export default function Day() {
-  return <div></div>;
+  return <div>x</div>;
 }
