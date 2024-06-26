@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 export default function Day() {
   const [tasks, setTasks] = useState(["deadlift", "squat", "lunges"]);
   const [newTask, setNewTask] = useState("");
@@ -35,6 +36,12 @@ export default function Day() {
             <span className="text">{task}</span>
             <button className="delete-button" onClick={() => deleteTask(index)}>
               Delete
+            </button>
+            <button className="move-button" onClick={() => moveTaskUp(index)}>
+              move up
+            </button>
+            <button className="move-button" onClick={() => moveTaskDown(index)}>
+              move down
             </button>
           </li>
         ))}
