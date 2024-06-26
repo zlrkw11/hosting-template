@@ -27,6 +27,7 @@ button {
 .add-bar {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .add-button:hover {
   background-color: white;
