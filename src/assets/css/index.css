@@ -1,3 +1,11 @@
+body {
+  background-color: hsl(0, 0%, 10%);
+}
+
+h1 {
+  color: white;
+}
+
 .to-do-list {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
@@ -19,7 +27,7 @@ button {
 }
 
 .add-button {
-  background-color: hsl(0, 2%, 38%);
+  background-color: hsl(0, 3%, 78%);
   border: 3px solid black;
 }
 .add-bar {

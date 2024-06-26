@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 export default function Day() {
   const [dayName, setDayName] = useState("");
-  const [tasks, setTasks] = useState(["deadlift", "squat", "lunges"]);
+  const [tasks, setTasks] = useState(["deadlift", "squat", "lunges"]); // list items
   const [newTask, setNewTask] = useState("");
 
   function handleInputChange(event) {
@@ -13,11 +13,27 @@ export default function Day() {
     setDayName(e.target.value);
   }
 
-  function addTask() {}
+  function addTask() {
+    if (newTask.trim() !== "") {
+      setTasks((tasks) => [...tasks, newTask]); //take current tasks
+      setNewTask("");
+    }
+  }
 
-  function deleteTask(index) {}
+  function deleteTask(index) {
+    const updatedTasks = tasks.filter((element, i) => i !== index); // filter out the matched ones
+    setTasks(updatedTasks);
+  }
 
-  function moveTaskUp(index) {}
+  function moveTaskUp(index) {
+    if (index > 0) {
+      const updatedTasks = [...tasks];
+      [updatedTasks[index], updatedTasks[index - 1]] = [
+        updatedTasks[index - 1],
+        updatedTasks[index],
+      ];
+    }
+  }
 
   function moveTaskDown(index) {}
 
