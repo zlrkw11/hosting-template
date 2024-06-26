@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 export default function Day() {
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState(["deadlift", "squat", "lunges"]);
   const [newTask, setNewTask] = useState("");
 
   function handleInputChange(event) {
