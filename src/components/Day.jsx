@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 
 export default function Day() {
+  const [dayName, setDayName] = useState("");
   const [tasks, setTasks] = useState(["deadlift", "squat", "lunges"]);
   const [newTask, setNewTask] = useState("");
 
   function handleInputChange(event) {
     setNewTask(event.target.value);
+  }
+
+  function handleInputDayNameChange(e) {
+    setDayName(e.target.value);
   }
 
   function addTask() {}
@@ -18,7 +23,13 @@ export default function Day() {
 
   return (
     <div className="to-do-list">
-      <h1>Gym Plan</h1>
+      <input
+        type="text"
+        placeholder="enter day name"
+        value={dayName}
+        onChange={handleInputDayNameChange}
+      ></input>
+      <h1>{dayName}</h1>
       <div>
         <input
           type="text"

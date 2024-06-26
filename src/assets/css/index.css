@@ -43,3 +43,13 @@ button {
 .delete-button:hover {
   background-color: white;
 }
+
+input[type="text"] {
+  font-size: 3 rem;
+  padding: 20px;
+  border: 2px solid black;
+}
+
+ol {
+  padding: 0px;
+}

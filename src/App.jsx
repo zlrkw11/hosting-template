@@ -5,6 +5,7 @@ import "./assets/css/index.css";
 function App() {
   return (
     <>
+      <h1>Gym Plan</h1>
       <Day />
     </>
   );
