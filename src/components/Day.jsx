@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function Day() {
   const [dayName, setDayName] = useState("");
@@ -32,10 +32,20 @@ export default function Day() {
         updatedTasks[index - 1],
         updatedTasks[index],
       ];
+      setTasks(updatedTasks);
     }
   }
 
-  function moveTaskDown(index) {}
+  function moveTaskDown(index) {
+    if (index < tasks.length - 1) {
+      const updatedTasks = [...tasks];
+      [updatedTasks[index], updatedTasks[index + 1]] = [
+        updatedTasks[index + 1],
+        updatedTasks[index],
+      ];
+      setTasks(updatedTasks);
+    }
+  }
 
   return (
     <div className="to-do-list">
