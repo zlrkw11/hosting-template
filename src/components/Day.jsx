@@ -30,7 +30,7 @@ export default function Day() {
         onChange={handleInputDayNameChange}
       ></input>
       <h1>{dayName}</h1>
-      <div>
+      <div className="add-bar">
         <input
           type="text"
           placeholder="enter an exercise"
