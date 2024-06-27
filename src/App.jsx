@@ -10,12 +10,12 @@ function App() {
   }
 
   return (
-    <>
+    <div className="main">
       <button onClick={AddDay}>Add a new day</button>
       {days.map((_, index) => (
         <Day key={index} /> // display days list by mapping a day to every empty object
       ))}
-    </>
+    </div>
   );
 }
 

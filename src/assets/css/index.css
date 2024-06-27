@@ -6,6 +6,11 @@ h1 {
   color: white;
 }
 
+.main {
+  display: flex;
+  gap: 10px;
+}
+
 .to-do-list {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
