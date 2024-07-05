@@ -7,4 +7,5 @@ export default defineConfig({
   build: {
     outDir: "build", // Ensure this line is present
   },
+  base: "/hosting-template/",
 });
